@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Coding Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    width: calc(33.33% - 20px);
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section-title {
+    background-color: #4CAF50;
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+p {
+    padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .section {
+        width: calc(50% - 20px);
+    }
+    .section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 20px);
+    }
+}
+
+</style>
+<body>
+    <h1>Our Menu</h1>
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Chicken</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis eget justo vestibulum sodales.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Beef</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis eget justo vestibulum sodales.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis eget justo vestibulum sodales.</p>
+        </div>
+    </div>
+</body>
+</html>
